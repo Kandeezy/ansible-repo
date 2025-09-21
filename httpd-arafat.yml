@@ -1,0 +1,17 @@
+---
+- name: Install http server
+  hosts: aws-node2
+  become: yes
+
+  tasks:
+  - name: Install httpd
+    yum:
+      name: httpd
+      state: present
+
+  - name: Start httpd
+    service:
+      name: httpd
+      state: started
+...
+
