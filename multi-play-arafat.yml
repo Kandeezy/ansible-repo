@@ -1,0 +1,45 @@
+---
+- name: Update aws-node1 server
+  hosts: aws-node1
+
+  tasks:
+  - name: Create directory
+    file:
+      path: /home/ec2-user/new_dir
+      state: directory
+
+  - name: Create directory
+    file:
+      path: /home/ec2-user/new_dir_1
+      state: directory
+
+- name: Update aws-node2 server
+  hosts: aws-node2
+
+  tasks:
+  - name: Create directory
+    file:
+      path: /home/ec2-user/new_dir
+      state: directory
+
+  tasks:
+  - name: Create directory
+    file:
+      path: /home/ec2-user/new_dir_2
+      state: directory
+
+- name: Update group1 server
+  hosts: g1
+
+  tasks:
+  - name: Create directory
+    file:
+      path: /home/ec2-user/new_dir_group
+      state: directory
+
+  - name: Create directory
+    file:
+      path: /home/ec2-user/new_dir_group1
+      state: directory
+...
+
