@@ -1,6 +1,6 @@
 ---
 - name: Under maintenance page
-  hosts: aws-node3
+  hosts: aws-node2
   become: yes
 
   tasks:
