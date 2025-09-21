@@ -1,0 +1,11 @@
+---
+- name: Update aws-node1 server
+  hosts: aws-node1
+
+  tasks:
+  - name: Create directory
+    file:
+      path: /home/ec2-user/new_dir
+      state: directory
+...
+
