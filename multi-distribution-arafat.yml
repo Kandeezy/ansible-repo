@@ -23,7 +23,6 @@
     when: ansible_distribution == "Amazon" or ansible_distribution == "Centos"
 
 
-  tasks:
   - name: Install Apache2
     apt:
       name: apache2
