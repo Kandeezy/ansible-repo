@@ -1,11 +1,11 @@
 ---
-- name: Deploy web app
+- name: Deploy php app
   hosts: aws-node3
   become: yes
 
   roles:
   - apache
-  - html
+  - php
 
 ...
 
